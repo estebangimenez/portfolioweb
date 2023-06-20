@@ -7,12 +7,15 @@
     <title>Portfolio Esteban</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ee97b22d22.js" crossorigin="anonymous"></script>
+   
+		
+	
 </head>
 <body>
-<div id="header">
+<!--<div id="header">
     <div class="container">
         <nav>
-           <!-- <img src="img/logo.png" class="logo"> -->
+            <img src="img/logo.png" class="logo"> 
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,7 +24,9 @@
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+
             <i class="fas fa-bars" onclick="openmenu()"></i>
+    
         </nav>
         <div class="header-text">
             <p>Full Stack Web Developer</p>
@@ -29,7 +34,43 @@
             </h1>
         </div>
     </div>
+</div> -->
+
+<header>
+    <div class="container">
+    <nav>
+        <ul id="sidemenu">
+           <!-- <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Portafolio</a></li>
+            <li><a href="#">Contacto</a></li> -->
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+</header>
+<section lass="zona1"></section>
+<div id="header">
+    <div class="container">
+       
+        <div class="header-text">
+            <p>Full Stack Web Developer</p>
+            <h1>Hi there! I'm <span>Esteban</span><br>Gimenez from Argentina
+            </h1>
+        </div>
+    </div>
 </div>
+
+</div>
+
+
+
 <!-- ----------------About------------------- -->
 <div id="about">
     <div class="container">
@@ -102,8 +143,7 @@
                 <i class="fa-brands fa-square-js"></i>
                 <h2>JavasCript</h2>
                 <p></p>
-                <a href="img/portfolio/thumbnails/slide4.jpg" title="View ALGO" class="openButton"
-										data-fancybox data-caption="Lurflix - Netflix Clone Project">>Read more</a>
+                <a href="#">Read more</a>
             </div>
             <div>
                 <i class="fa-brands fa-html5"></i>
@@ -294,6 +334,12 @@
     function closemenu() {
         sidemenu.style.right = "-200px";
     }
+</script>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("abajo",window.scrollY>0);
+    })
 </script>
 </body>
 </html>
