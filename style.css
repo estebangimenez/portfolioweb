@@ -423,7 +423,7 @@ nav .fas {
     }
     nav ul {
         background: yellow;
-        color: yellow;
+        color: black;
         position: fixed;
         top: 0;
         right: -200px;
@@ -454,7 +454,7 @@ nav .fas {
         content: '';
         width: 0%;
         height: 3px;
-        background: yellow;
+        background: black;
         position:absolute;
         left:0;
         bottom: -6px;
