@@ -180,8 +180,9 @@ nav ul li a:hover::after {
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin-top: 40px;
+    
     
 }
 
@@ -192,6 +193,7 @@ nav ul li a:hover::after {
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    color:yellow;
 }
 
 .services-list div i {
@@ -405,7 +407,7 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .header-text {
         margin-top: 100%;
         font-size: 16px;
@@ -497,7 +499,13 @@ nav .fas {
     }
     .services-list{
         
-        grid-template-columns:repeat(auto-fit, minmax(150px, 1fr))
+        grid-template-columns:repeat(auto-fit, minmax(130px, 1fr))
+    }
+
+    .services-list div h2 {
+        font-size: 25px;
+        font-weight: 500;
+        margin-bottom: 15px;
     }
 
     .work {
